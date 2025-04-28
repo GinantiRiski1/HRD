@@ -11,7 +11,7 @@ Tingginya attrition rate ini menimbulkan kekhawatiran bagi perusahaan karena dap
 Untuk mengatasi masalah ini, manajer departemen HR meminta bantuan untuk:
 - Mengidentifikasi faktor-faktor utama yang mempengaruhi tingkat attrition di perusahaan.
 - Membangun dashboard bisnis yang dapat memonitor faktor-faktor penting tersebut secara berkala, sehingga perusahaan dapat mengambil langkah preventif untuk mengurangi tingkat turnover karyawan.
-
+---
 ### Permasalahan Bisnis
 
 Berdasarkan latar belakang yang telah dijelaskan, permasalahan bisnis yang dihadapi oleh Jaya Jaya Maju adalah sebagai berikut:
@@ -27,6 +27,7 @@ Berdasarkan latar belakang yang telah dijelaskan, permasalahan bisnis yang dihad
 
 4. **Kebutuhan untuk Mengurangi Turnover dan Meningkatkan Retensi Karyawan**  
    - Perusahaan perlu strategi berbasis data untuk mengidentifikasi kelompok karyawan yang berisiko tinggi keluar, agar dapat dilakukan intervensi lebih awal dan meningkatkan tingkat retensi.
+---
 
 ### Cakupan Proyek
 
@@ -69,7 +70,7 @@ Cakupan proyek ini mencakup analisis dan visualisasi faktor-faktor yang mempenga
     - Menilai apakah jarak tempat tinggal karyawan dari kantor berpengaruh terhadap keputusan mereka untuk keluar dari perusahaan.
 
 Seluruh analisis ini akan divisualisasikan dalam sebuah dashboard interaktif untuk memudahkan manajemen HR dalam memahami kondisi karyawan dan mengambil langkah-langkah strategis.
-
+---
 
 ### Persiapan
 
@@ -108,18 +109,59 @@ df.head()
    docker run -p 3000:3000 --name metabase metabase/metabase
    ```
 7. Setelah berhasil pull metabase kedalam docker, maka kita tinggal jalankan `http://localhost:3000/setup` pada web browser kita, dan sudah bisa melakukan pembuatan model, question dan dashboard.
-   
+
+---   
 ## Business Dashboard
 
-Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
+Business dashboard ini dibuat untuk membantu manajer HR di Jaya Jaya Maju dalam memahami faktor-faktor yang mempengaruhi tingginya tingkat attrition (keluarnya karyawan) di perusahaan. Dashboard ini menampilkan visualisasi dari berbagai faktor penting yang telah diidentifikasi melalui analisis model Random Forest.
+
+Beberapa hal yang ditampilkan dalam dashboard antara lain:
+- Perbandingan jumlah attrition antara karyawan yang lembur dan tidak lembur.
+- Tingkat kepuasan terhadap lingkungan kerja.
+- Kondisi keseimbangan kerja dan kehidupan karyawan.
+- Distribusi tingkat jabatan dan hubungannya dengan attrition.
+- Jumlah attrition berdasarkan kategori penghasilan bulanan.
+- Pengaruh tingkat opsi saham (stock option level) terhadap attrition.
+- Hubungan antara jumlah pengalaman kerja dengan tingkat attrition.
+- Jarak rumah ke kantor dan kaitannya dengan attrition.
+- Hubungan kenaikan gaji dengan tingkat turnover.
+- Tingkat attrition berdasarkan posisi atau role pekerjaan.
+- Tingkat kepuasan kerja secara keseluruhan.
+- Distribusi usia karyawan dan kaitannya dengan attrition.
+
+Dashboard ini diharapkan dapat menjadi alat monitoring penting untuk mengambil keputusan strategis dalam pengelolaan karyawan.
+
+[Link akses dashboard](http://localhost:3000/public/dashboard/dde302cc-d159-435d-9401-9418fdcb54ae)
+
+---
 
 ## Conclusion
 
-Jelaskan konklusi dari proyek yang dikerjakan.
+Berdasarkan hasil analisis dan pembuatan dashboard, ditemukan beberapa insight penting:
+
+- Karyawan yang sering lembur (OverTime) lebih cenderung keluar dibandingkan yang tidak lembur.
+- Kepuasan terhadap lingkungan kerja berbanding lurus dengan tingkat retensi karyawan.
+- Keseimbangan kerja dan kehidupan yang buruk meningkatkan kemungkinan attrition.
+- Karyawan di tingkat jabatan rendah (Level 1) lebih banyak mengalami attrition.
+- Karyawan dengan penghasilan bulanan rendah lebih banyak keluar dibandingkan karyawan dengan penghasilan tinggi.
+- Karyawan dengan tingkat opsi saham lebih rendah cenderung lebih sering keluar.
+- Karyawan dengan pengalaman kerja 0-10 tahun lebih rentan keluar dibandingkan yang lebih berpengalaman.
+- Jarak rumah yang terlalu jauh sedikit meningkatkan risiko karyawan keluar.
+- Kenaikan gaji yang lebih rendah berhubungan dengan tingkat turnover yang lebih tinggi.
+- Beberapa posisi pekerjaan seperti Laboratory Technician dan Sales Executive memiliki tingkat attrition lebih tinggi dibanding posisi lainnya.
+- Karyawan dengan tingkat kepuasan kerja rendah lebih cenderung keluar.
+- Usia karyawan muda (22-37 tahun) lebih dominan dalam attrition dibandingkan usia lainnya.
+
+---
 
 ### Rekomendasi Action Items (Optional)
 
-Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
+- Meningkatkan program keseimbangan kerja dan kehidupan untuk karyawan, seperti fleksibilitas kerja atau cuti tambahan.
+- Memberikan perhatian khusus pada karyawan yang sering lembur dengan menawarkan insentif tambahan atau mengelola beban kerja mereka.
+- Meningkatkan kompensasi dan tunjangan, khususnya untuk karyawan dengan penghasilan rendah.
+- Meningkatkan peluang pengembangan karir bagi karyawan di jabatan rendah.
+- Membuat program retensi khusus untuk posisi pekerjaan dengan tingkat keluar yang tinggi, seperti Laboratory Technician dan Sales Executive.
+- Memberikan opsi saham atau insentif jangka panjang kepada karyawan untuk meningkatkan loyalitas.
+- Menyediakan fasilitas transportasi atau bantuan untuk karyawan yang tinggal jauh dari kantor.
+- Menyesuaikan kebijakan kenaikan gaji agar lebih kompetitif untuk mempertahankan karyawan.
 
-- action item 1
-- action item 2
