@@ -165,3 +165,7 @@ Berdasarkan hasil analisis dan pembuatan dashboard, ditemukan beberapa insight p
 - Menyediakan fasilitas transportasi atau bantuan untuk karyawan yang tinggal jauh dari kantor.
 - Menyesuaikan kebijakan kenaikan gaji agar lebih kompetitif untuk mempertahankan karyawan.
 
+### Akses Metabase 
+untuk dapat akses model, question, dan dashboard, anda dapat mengunjungi metabase dengan informasi berikut :
+username : ginantiriski@gmail.com
+password : Aaaaa10&25
